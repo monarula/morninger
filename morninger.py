@@ -43,11 +43,9 @@ def open_tabs():
     webbrowser.register('chrome', None,
                         webbrowser.BackgroundBrowser(chrome_path))
     my_browser = webbrowser.get('chrome')
-    my_browser.open(url_dict['gmail'])
-    my_browser.open(url_dict['google'])
-    my_browser.open(url_dict['newstand'])
-    my_browser.open(url_dict['foxnews'])
-    my_browser.open(url_dict['my_stocks'])
+
+    for k, v in url_dict.items():
+        my_browser.open(url_dict[k])
 
 
 if __name__ == "__main__":
