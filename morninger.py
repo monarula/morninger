@@ -1,6 +1,8 @@
 """Morninger:
  It's a automated process which lets you customize your daily web browsing
  Author : Mohit Narula"""
+
+
 import webbrowser
 import time
 
@@ -9,6 +11,7 @@ url_dict = {
     'gmail': "https://mail.google.com/mail/u/0/#inbox",
     'newstand': "https://newsstand.google.com/",
     'foxnews': "http://fox5sandiego.com/",
+    'my_stocks': "https://goo.gl/BwQA9p"
 }
 
 
@@ -44,6 +47,7 @@ def open_tabs():
     my_browser.open(url_dict['google'])
     my_browser.open(url_dict['newstand'])
     my_browser.open(url_dict['foxnews'])
+    my_browser.open(url_dict['my_stocks'])
 
 
 if __name__ == "__main__":
